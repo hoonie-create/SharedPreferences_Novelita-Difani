@@ -1,0 +1,170 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutUtama"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- 1. Kartu profil -->
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/desc_avatar"
+            android:src="@drawable/avatar_1" />
+
+        <TextView
+            android:id="@+id/tvNamaKartu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/nama_default"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvEmailKartu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/email_default"
+            android:textSize="14sp" />
+
+
+        <!-- 2. Form profil -->
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:hint="@string/label_nama"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/label_email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/etBio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/label_bio"
+            android:inputType="textMultiLine"
+            android:maxLines="3" />
+
+        <Button
+            android:id="@+id/btnGantiAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/btn_ganti_avatar" />
+
+        <!-- 3. SOAL NO. 1 - SIMPAN NAMA PANGGILAN    -->
+
+        <!-- EditText untuk memasukkan nama panggilan -->
+        <EditText
+            android:id="@+id/etNamaPanggilan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Masukkan nama panggilan"
+            android:inputType="textPersonName" />
+
+        <!-- Tombol Simpan khusus nama panggilan -->
+        <Button
+            android:id="@+id/btnSimpanNamaPanggilan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan Nama Panggilan" />
+
+        <!-- TextView untuk menampilkan nama panggilan -->
+        <TextView
+            android:id="@+id/tvNamaPanggilan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Nama panggilan akan muncul di sini"
+            android:textSize="16sp" />
+
+        <!-- ================================================= -->
+        <!-- 4. SOAL NO. 2 - SIMPAN KOTA                     -->
+        <!-- ================================================= -->
+
+        <!-- >>> JAWABAN SOAL NO. 2 <<< -->
+        <!-- EditText untuk memasukkan kota -->
+        <EditText
+            android:id="@+id/etKota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Masukkan kota"
+            android:inputType="text" />
+
+        <!-- >>> JAWABAN SOAL NO. 2 <<< -->
+        <!-- Tombol untuk menyimpan kota -->
+        <Button
+            android:id="@+id/btnSimpanKota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan Kota" />
+
+        <!-- >>> JAWABAN SOAL NO. 2 <<< -->
+        <!-- TextView untuk menampilkan kota -->
+        <TextView
+            android:id="@+id/tvKota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Kota akan muncul di sini"
+            android:textSize="16sp" />
+
+        <!-- ================================================= -->
+        <!-- 5. SOAL NO. 3 - PENGHITUNG PEMBUKAAN APLIKASI    -->
+        <!-- ================================================= -->
+
+        <!-- >>> JAWABAN SOAL NO. 3 <<< -->
+        <!-- Menampilkan jumlah aplikasi dibuka -->
+
+        <TextView
+            android:id="@+id/tvJumlahBuka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Kamu sudah membuka aplikasi ini 0 kali"
+            android:textSize="16sp" />
+
+        <!-- 6. Mode gelap -->
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swGelap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/label_mode_gelap" />
+
+        <!-- 7. Tombol aksi profil -->
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/btn_simpan" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_reset" />
+
+    </LinearLayout>
+
+</ScrollView>
